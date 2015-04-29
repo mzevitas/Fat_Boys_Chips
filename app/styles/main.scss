@@ -1,23 +1,239 @@
+@import "../../bower_components/foundation/scss/foundation/components/magellan";
+@import "../../bower_components/foundation/scss/foundation/components/global";
+@import "../../bower_components/foundation/scss/foundation/components/flex-video";
+@import "../../bower_components/foundation/scss/foundation/components/reveal";
+@import "../../bower_components/foundation/scss/foundation/components/grid";
 
-// Custom Styles
+
 body {
-  background: #fafafa;
-  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
-  color: #333;
+  font-family: 'Vollkorn', serif;
 }
 
-.hero-unit {
-  margin: 50px auto 0 auto;
-  width: 600px;
-  font-size: 18px;
-  font-weight: 200;
-  line-height: 30px;
-  background-color: #eee;
-  border-radius: 6px;
-  padding: 60px;
-  h1 {
-    font-size: 60px;
-    line-height: 1;
-    letter-spacing: -1px;
+#header {
+height: 400px;
+  background-color: beige;
+
+}
+
+
+.logohead {
+  text-decoration: none;
+  color: black;
+  font-size: 3em;
+  margin-left: 4%;
+
+  img {
+    width: 26%;
+    height: 72px;
+    margin-top: -20px;
   }
+}
+
+
+.sub-nav{
+  float: right;
+  font-size: 2em;
+  margin-top: -67px;
+  font-weight: 700;
+  font-style: italic;
+
+  a {
+    color:#a30f19;
+    -webkit-text-stroke-width: 0.5px;
+    -webkit-text-stroke-color: white;
+    text-decoration: none;
+    padding: 21px;
+    transition: 1s ease;
+
+  }
+  a:hover{
+    color: hsla(9,84%,64%,1);
+    webkit-transform: scale(1.4);
+    -ms-transform: scale(1.4);
+    transform: scale(1.4);
+    transition: 1s ease;
+  }
+
+  .facebook img{
+    width: 65px;
+  }
+
+  .twitter img {
+    width: 70px;
+    margin-left: -45px;
+  }
+
+
+}
+
+
+
+// Products section
+
+
+.chips {
+  text-align: center;
+  height: auto;
+  background-color: #beccd3;
+  padding-top: 1px;
+
+
+  h1 {
+    color:#a30f19;
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: white;
+    text-decoration: none;
+    font-size: 2.5em;
+    font-weight: 700;
+    font-style: italic;
+  }
+
+  .row {
+    //margin-top: -145px;
+    height: 390px;
+  }
+
+  .medium-6 {
+
+      //margin-top: 120px;
+     //margin-bottom: 20px;
+     //height: auto;
+   }
+
+
+
+
+
+  //flip Styles
+
+  //flip Styles:
+
+  .flip-container {
+    perspective: 1000;
+    //clear: both;
+    margin: 0 auto;
+  }
+  /* flip the pane when hovered */
+  .flip-container:hover .flipper, .flip-container.hover .flipper {
+    transform: rotateY(180deg);
+  }
+
+  .flip-container, .front, .back {
+    width: 350px;
+    height: 250px;
+
+    img {
+      border-radius: 17px;
+    }
+
+
+  }
+
+  /* flip speed goes here */
+  .flipper {
+    transition: 0.6s;
+    transform-style: preserve-3d;
+
+    position: relative;
+  }
+
+  /* hide back of pane during swap */
+  .front, .back {
+    backface-visibility: hidden;
+
+    position: absolute;
+    top: 0;
+    left: 0;
+    p{
+      width: 70%;
+      text-align: center;
+      margin: 0 auto;
+    }
+  }
+
+  /* front pane, placed above back */
+  .front {
+    z-index: 2;
+    /* for firefox 31 */
+    transform: rotateY(0deg);
+  }
+
+  /* back, initially hidden pane */
+  .back {
+    transform: rotateY(180deg);
+  }
+
+
+
+}
+
+
+
+
+
+//About Section
+
+.about {
+
+  text-align: center;
+  height: auto;
+  background-color: #e0e7eb;
+  padding-top: 1px;
+
+
+  h1 {
+    color:#a30f19;
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: white;
+    text-decoration: none;
+    font-size: 2.5em;
+    font-weight: 700;
+    font-style: italic;
+  }
+
+
+
+}
+
+
+
+
+
+// Contact Section
+
+.contact {
+  text-align: center;
+  height: auto;
+
+
+
+  h1 {
+    color:#a30f19;
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: white;
+    text-decoration: none;
+    font-size: 2.5em;
+    font-weight: 700;
+    font-style: italic;
+  }
+
+}
+
+
+
+
+
+
+// Sticky Header Color  and Clone
+
+[data-magellan-expedition] {
+  background-color: hsla(0,0%,22%,1);
+  margin-bottom: 10px;
+  height: 80px;
+  text-decoration: none;
+
+
+}
+[data-magellan-expedition-clone] {
+  display: none;
 }
