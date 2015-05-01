@@ -10,9 +10,13 @@ body {
 }
 
 #header {
-height: 400px;
+  height: auto;
   background-color: beige;
 
+
+  img {
+margin-top: -10px;
+  }
 }
 
 
@@ -76,6 +80,7 @@ height: 400px;
   height: auto;
   background-color: #beccd3;
   padding-top: 1px;
+  width: 100%;
 
 
   h1 {
@@ -88,23 +93,31 @@ height: 400px;
     font-style: italic;
   }
 
-  .row {
-    //margin-top: -145px;
-    height: 390px;
+  .ingred {
+    font-size: 7%;
   }
 
-  .medium-6 {
 
-      //margin-top: 120px;
-     //margin-bottom: 20px;
-     //height: auto;
+  .row {
+    //margin-top: -145px;
+    height: 570px;
+
+    img {
+      height: 500px;
+    }
+
+
+  }
+
+  .medium-6 .columns {
+
    }
 
 
 
 
 
-  //flip Styles
+
 
   //flip Styles:
 
@@ -124,6 +137,7 @@ height: 400px;
 
     img {
       border-radius: 17px;
+      box-shadow: 2px 2px 2px 2px #494d4e;
     }
 
 
@@ -167,9 +181,33 @@ height: 400px;
 
 }
 
+.chips .back {
+  background-color: hsla(14,84%,75%,1);
+  height: auto;
+  border-radius: 17px;
+}
 
+.chips .back p {
+  width: 98%;
+  margin-bottom: 0;
+}
 
+.chips .back .ingred{
+  font-size: 0.8em;
+  margin-bottom: 0;
 
+}
+
+.chips .back h2{
+  color:#a30f19;
+  -webkit-text-stroke-width: 1px;
+  -webkit-text-stroke-color: white;
+  text-decoration: none;
+  font-size: 1.8em;
+  font-weight: 700;
+  font-style: italic;
+  margin-bottom: -14px;
+}
 
 //About Section
 
@@ -190,7 +228,12 @@ height: 400px;
     font-weight: 700;
     font-style: italic;
   }
+ p {
+   width: 70%;
+   margin: 0 auto;
+   padding-bottom: 40px;
 
+ }
 
 
 }
@@ -204,11 +247,16 @@ height: 400px;
 .contact {
   text-align: center;
   height: auto;
+  background-image:url("images/footer.jpg");
+
+
+
 
 
 
   h1 {
-    color:#a30f19;
+    text-align: center;
+    color: #a30f19;
     -webkit-text-stroke-width: 1px;
     -webkit-text-stroke-color: white;
     text-decoration: none;
