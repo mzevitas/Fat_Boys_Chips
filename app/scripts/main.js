@@ -11,7 +11,7 @@ $(document).foundation({
 
 (function(){
 
-	angular.module('Chips', ['ngRoute']) 
+	angular.module('Chips', ['ngRoute', "ngAnimate"]) 
 		.controller('PageCtrl', function () {
         console.log("Page Controller here.");
     })

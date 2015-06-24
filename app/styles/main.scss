@@ -6,12 +6,12 @@
 $font-red: #a30f19;
 $red-fade: hsla(355, 81%, 35%, 0.7);
 body {
-    font-family: 'Vollkorn', serif;
+    // font-family: 'Vollkorn', serif;
 }
 
 #header {
     height: auto;
-    background-color: #ebebeb;
+    // background-color: hsla(300,2%,79%,1);
     // margin-bottom: 10px;  
     img {
         // margin-top: -10px;
@@ -26,7 +26,7 @@ body {
     img {
         width: 26%;
         height: 72px;
-        margin-top: -12px;
+        margin-top: -21px;
     }
 }
 
@@ -105,12 +105,32 @@ body {
     .chipsnav {
       display: inline;
       text-align: center;
+        transition: 1s ease;
+
+      a {
+        color: #6e6d6d;
+        padding: 10px;
+        font-size: 1em;
+        font-weight: 200;
+        &:hover{
+          color: #565656;
+        }
+      }
+      span {
+        color: $red-fade;
+      }
     }
+
   }
 
   .container {
     height: 500px;
   }
+
+
+
+
+
     
 
 //About Section
@@ -154,7 +174,7 @@ body {
 
 // Sticky Header Color  and Clone
 [data-magellan-expedition] {
-    background-color: white;
+    background-color: hsla(0,0%,98%,0.9);
     margin-bottom: 10px;
     height: 80px;
     text-decoration: none;
