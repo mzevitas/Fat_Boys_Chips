@@ -5,30 +5,57 @@
 @import "../../bower_components/foundation/scss/foundation/components/grid";
 $font-red: #a30f19;
 $red-fade: hsla(355, 81%, 35%, 0.7);
+
+
 body {
-    // font-family: 'Vollkorn', serif;
+   font-family: 'Raleway', sans-serif;
+   background-image: url('/images/diamondbackground2.png');
+    background-size: 40% auto;
 }
 
-#header {
-    height: auto;
-    background-color: hsla(300,2%,79%,0.8);
-    z-index: 2;
-    // margin-bottom: 10px;  
-    img {
-        // margin-top: -10px;
-    }
-}
+header {
+    height: 80;
+    border-bottom: 3px solid hsla(355,81%,35%,0.4);
+    background-color: hsla(0,0%,73%,0.6);
 
-.logohead {
-    text-decoration: none;
-    color: black;
-    font-size: 3em;
-    margin-left: 5%;
-    img {
-        width: 26%;
-        height: 85px;
-        margin-top: -5px;
+    .logo{
+        // float: left;
+        display: inline;
+        img {
+             width: 30%;
+             margin-bottom: -63px;
+             margin-top: 15px;
+             margin-left: 50px;
+
+        }
     }
+
+    nav {
+        float: right;
+        margin-right: 13%;
+        margin-top: 10px;
+
+        a{
+            padding: 10px;
+            font-size: 1.3em;
+            font-weight: 800;
+            color: #a30f19;
+            -webkit-text-stroke-width: 0.3px;
+            -webkit-text-stroke-color: white;
+            padding: 13px;
+            transition: 1s ease;
+
+            a:hover {
+                color: #a30f19;
+                webkit-transform: scale(1.4);
+                -ms-transform: scale(1.4);
+                transform: scale(1.4);
+                transition: 1s ease;
+            }
+        }
+    }
+
+
 }
 
 
@@ -56,94 +83,50 @@ background-size: 40% auto;
 
 
 
-.sub-nav {
-    float: right;
-    font-size: 1.5em;
-    margin-top: -93px;
-     font-weight: 700;
-    font-style: italic;
-    text-shadow: 2px 2px 2px black;
-    a {
-        color: #a30f19;
-        -webkit-text-stroke-width: 0.2px;
-        -webkit-text-stroke-color: white;
-        text-decoration: none;
-        padding: 13px;
-        transition: 1s ease;
+
+
+ .container {
+    height: auto;
+    margin-top: 70px;
+    width: 80%;
+    margin-right: auto;
+    margin-left: auto;
+
+
+    h2{
+      text-align: center;
+      margin-top: 30px;
     }
-    a:hover {
-        color: hsla(9, 84%, 64%, 1);
-        webkit-transform: scale(1.4);
-        -ms-transform: scale(1.4);
-        transform: scale(1.4);
-        transition: 1s ease;
-    }
-    .facebook img {
-        width: 65px;
-    }
-    .twitter img {
-        width: 70px;
-        margin-left: -55px;
-    }
+
+  }
+
+
+//Chips 
+
+.chipsnav {
+  text-align: center; 
 }
 
-// Products section
-.chips {
-    text-align: center;
-    height: auto;
-    background-image: url('/images/diamondbackground2.png');
-     background-size: 40% auto;
-    padding-top: 1px;
-    width: 100%;
-    border-bottom: 3px solid $red-fade;
-    h1 {
-        color: #a30f19;
-        -webkit-text-stroke-width: 1px;
-        -webkit-text-stroke-color: white;
-        text-decoration: none;
-        font-size: 3em;
-        font-weight: 700;
-        font-style: italic;
-    }
 
-    .chipsnav {
-      display: inline;
-      text-align: center;
-        transition: 1s ease;
 
-      a {
-        color: #6e6d6d;
-        padding: 10px;
-        font-size: 1.1em;
-        font-weight: 400;
-        &:hover{
-          color: black;
-        }
-      }
-      span {
-        color: $red-fade;
-      }
-    }
 
-  }
+.left {
+  float: left;
+  margin-top: 10px;
+  margin-left: 11%;
+  width: 45%;
 
-  .container {
-    height: auto;
+}
 
-    #chips4{
-        margin-top: 20px;
-        margin-bottom: 20px;
-    }
+.right {
+  float: right;
+  width: 38%;
+  margin-top: -40px;
 
-    p{
-        float: left; 
-        width: 30%;
-    }
-    .singlechip{
-        float: right;
-        width: 30%;
-    }
-  }
+  img {
+  width: 60%;
+  margin-left: 8%;  }
+}
 
 
 
@@ -152,60 +135,7 @@ background-size: 40% auto;
     
 
 //About Section
-.about {
-    text-align: center;
-    background-image: url('/images/diamondbackgroundblue.png');
-    background-size: 40% auto;
 
-    height: auto;
-    background-color: #e0e7eb;
-    padding-top: 1px;
-    border-bottom: 3px solid $red-fade;
-    h1 {
-        color: #a30f19;
-        -webkit-text-stroke-width: 1px;
-        -webkit-text-stroke-color: white;
-        text-decoration: none;
-        font-size: 3em;
-        font-weight: 700;
-        font-style: italic;
-    }
-    p {
-        width: 70%;
-        margin: 0 auto;
-        padding-bottom: 40px;
-    }
-}
 
 // Contact Section
-.contact {
-    text-align: center;
-    height: auto;
 
-    h1 {
-        text-align: center;
-        color: #a30f19;
-        -webkit-text-stroke-width: 1px;
-        -webkit-text-stroke-color: white;
-        text-decoration: none;
-        font-size: 2.5em;
-        font-weight: 700;
-        font-style: italic;
-    }
-}
-
-// Sticky Header Color  and Clone
-[data-magellan-expedition] {
-    background-color: hsla(0,0%,100%,0.9);
-    // background-size: 16px 48px;
-    // margin-bottom: 10px;
-    z-index: 19; 
-    height: 50px;
-    text-decoration: none;
-    border-bottom: 2px solid $font-red;
-}
-
-[data-magellan-expedition-clone] {
-    display: none;
-    margin-top: 0;
-}
