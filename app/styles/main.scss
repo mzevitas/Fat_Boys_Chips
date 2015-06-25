@@ -96,6 +96,7 @@ background-size: 40% auto;
     h2{
       text-align: center;
       margin-top: 30px;
+
     }
 
   }
@@ -105,6 +106,14 @@ background-size: 40% auto;
 
 .chipsnav {
   text-align: center; 
+
+  a{
+    color: hsla(0,0%,40%,1);
+
+    &:hover {
+      color: black;
+    }
+  }
 }
 
 
@@ -115,6 +124,10 @@ background-size: 40% auto;
   margin-top: 10px;
   margin-left: 11%;
   width: 45%;
+
+  p {
+    color: hsla(0,0%,30%,1);
+  }
 
 }
 
@@ -132,6 +145,9 @@ background-size: 40% auto;
 
 
 
+
+
+
     
 
 //About Section
@@ -139,3 +155,25 @@ background-size: 40% auto;
 
 // Contact Section
 
+
+//footer 
+
+footer{
+  height: 80px;
+
+  border-top: 3px solid hsla(355,81%,35%,0.4);
+  background-color: hsla(0,0%,73%,0.6);
+  margin-right: auto;
+  margin-left: auto;
+  text-align: center;
+
+  .footleft {
+    float: left;
+    width: 30%;
+
+  }
+  .footright {
+    float: right;
+    width: 30%;
+  }
+}
