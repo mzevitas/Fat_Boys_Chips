@@ -8,15 +8,33 @@ $red-fade: hsla(355, 81%, 35%, 0.7);
 
 body {
    font-family: 'Raleway', sans-serif;
+
    background-image: url('/images/diamondbackground2.png');
     background-size: 40% auto;
+    // border: 3px solid hsla(355,81%,35%,0.5);
+    // box-shadow: 3px 3px 3px 3px hsla(0,0%,30%,0.2);
+    // background-color: hsla(355, 81%, 35%, 0.2);
+}
+
+.everything {
+
+
 }
 
 header {
-    height: 80;
-    border-bottom: 3px solid hsla(355,81%,35%,0.4);
-    background-color: hsla(0,0%,73%,0.6);
-    // position: fixed;
+  // background-image: url('/images/diamondbackground2.png');
+    // background-size: 40% auto;
+    height: 141px;
+    z-index: 1;
+    // border-bottom: 3px solid hsla(355,81%,35%,0.4);
+    // background-color: hsla(0,0%,73%,0.8);
+    background-image: url('/images/headfb.png');
+     background-size: 119% auto;
+  position: fixed;
+  top: 0px;
+  background-position-y: -63px;
+  background-repeat: no-repeat;
+  // box-shadow: 1px 1px 1px 1px yellow;
 
     .logo{
         // float: left;
@@ -24,7 +42,7 @@ header {
         img {
              width: 30%;
              margin-bottom: -63px;
-             margin-top: 15px;
+             margin-top: 8px;
              margin-left: 50px;
 
         }
@@ -39,19 +57,19 @@ header {
             padding: 10px;
             font-size: 1.3em;
             font-weight: 800;
-            color: #a30f19;
-            -webkit-text-stroke-width: 0.3px;
-            -webkit-text-stroke-color: white;
+            color: white;
+            -webkit-text-stroke-width: 0.9px;
+            -webkit-text-stroke-color: $red-fade;
             padding: 13px;
             transition: 1s ease;
-                  text-shadow: 3px 3px 3px hsla(0,0%,30%,0.6);
+            text-shadow: 4px 4px 4px hsla(0,0%,30%,0.9);
 
 
-            a:hover {
-                color: #a30f19;
-                webkit-transform: scale(1.4);
-                -ms-transform: scale(1.4);
-                transform: scale(1.4);
+            &:hover {
+                color: white;
+                webkit-transform: scale(1.1);
+                -ms-transform: scale(1.1);
+                transform: scale(1.1);
                 transition: 1s ease;
             }
         }
@@ -80,7 +98,7 @@ header {
 
  .container {
     height: auto;
-    margin-top: 65px;
+    margin-top: 100px;
     width: 80%;
     margin-right: auto;
     margin-left: auto;
