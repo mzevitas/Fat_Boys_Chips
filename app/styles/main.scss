@@ -16,15 +16,12 @@ body {
     // background-color: hsla(355, 81%, 35%, 0.2);
 }
 
-.everything {
 
-
-}
 
 header {
   // background-image: url('/images/diamondbackground2.png');
     // background-size: 40% auto;
-    height: 141px;
+    height: 35%;
     z-index: 1;
     // border-bottom: 3px solid hsla(355,81%,35%,0.4);
     // background-color: hsla(0,0%,73%,0.8);
@@ -72,6 +69,9 @@ header {
                 transform: scale(1.1);
                 transition: 1s ease;
             }
+            &:focus {
+              color: white;
+            }
         }
     }
 
@@ -81,12 +81,15 @@ header {
 
 
 .sliderImg {
-    width: 90%;
+    // width: 100%;
     display: block;
     margin: 0 auto;
+    margin-top: -99px;
     text-align: center;
-    border: 3px solid $red-fade;
-    padding: 3px;
+    // height: 400px;
+    // margin-bottom: 200px;
+    border-bottom: 3px solid $red-fade;
+    // padding: 3px;
     // margin-bottom: 15px;
     // margin-top: 20px;
 }
@@ -95,11 +98,15 @@ header {
 
 
 
-
+.social {
+  // clear: both;
+  background-color: #f27558;
+  height: 300px;
+}
  .container {
     height: auto;
     margin-top: 100px;
-    width: 80%;
+    width: 100%;
     margin-right: auto;
     margin-left: auto;
 
@@ -130,6 +137,13 @@ header {
   }
 
 
+.aboutsection,
+.chipssection,
+.contactsection {
+  width: 90%;
+  margin-left: auto;
+  margin-right: auto;
+}
 //Chips 
 
 .chipsnav {
