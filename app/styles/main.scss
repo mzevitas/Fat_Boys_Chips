@@ -96,6 +96,11 @@ header {
 }
 
 
+.hiddenimg{
+  padding-top: 30px;
+  display: none;
+}
+
 
 .sliderImg {
     // width: 100%;
@@ -278,6 +283,27 @@ text-shadow: -1px 0 #a60d13, 0 1px #a60d13, 1px 0 #a60d13, 0 -1px #a60d13;
 
 // Contact Section
 
+.contactsection {
+  height: 450px;
+
+  h4{
+    text-align: center;
+  }
+
+  a{
+    text-align: center;
+      margin-top: 30px;
+      color: $font-red;
+       -webkit-text-stroke-width: 0.3px;
+            -webkit-text-stroke-color: white;
+      font-weight: 800;
+      font-size: 1em;
+      text-shadow: 3px 3px 3px hsla(0,0%,30%,0.6);
+  &:hover{
+    text-shadow: 4px 4px 4px hsla(0,0%,30%,0.9);
+  }
+  }
+}
 
 //footer 
 
@@ -399,6 +425,8 @@ footer{
    }
 }
 
+
+
 footer{
   height: 45px;
   padding-top: 4px;
@@ -408,7 +436,13 @@ footer{
  }
 
 
+ .hiddenimg {
+    display: block;
+    margin-top: -30px;
+    margin-bottom: -30px;
 }
+}
+
 
 @media (max-width: 690px){
 header{
@@ -422,6 +456,8 @@ header{
       margin-top: -20px;
     }
 }
+
+
 
 
 }
