@@ -5,14 +5,35 @@
 
 
 
-<nav>
+<div class="menu">
 	<span><a ui-sref="home">Home</a></span>
 	<span><a ui-sref="ourChips">Our Chips</a></span>
 	<span><a ui-sref="about">About</a></span>
 	<span><a ui-sref="contact">Contact</a></span>
+</div>
 
 
-</nav>
+    <nav>
+        <div class="nav-btn"><i class="fa fa-bars fa-2x"></i></div>
+<br>
+        <ul class="nav">
+            <li><a ui-sref="home">Home</a></li>
+            <li><a ui-sref="ourChips">Our Chips</a></li>
+            <li><a ui-sref="about">About</a></li>
+            <li><a ui-sref="contact">Contact</a></li>
+        </ul>
+
+    </nav>
+
+ <script>
+        $('.nav-btn').click(function (){
+            $('.nav').slideToggle();
+        });
+        $('.nav').removeAttr('style');
+        $(".nav li").on("click",function(){
+            $('.nav').slideUp();
+        });
+    </script>
 
 	
 </header><!-- /header -->
